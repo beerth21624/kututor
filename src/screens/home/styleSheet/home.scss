@@ -79,11 +79,11 @@
 
         @media only screen and (max-width: 768px) {
             font-size: 1.5rem;
-              margin-bottom: -1rem;
+              margin-bottom: -0.5rem;
         }
          @media only screen and (max-width: 468px) {
             font-size: 1rem;
-            margin-bottom: -1rem;
+            margin-bottom: -0.5rem;
         }
     }
 }
@@ -100,6 +100,9 @@
   }
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 0.3rem;
+    padding: 0rem;
+    margin: 1rem 0.6rem;
   }
 }
 
@@ -202,10 +205,10 @@
     gap: 0.5rem;
     padding: 0.5rem;
     h5 {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     p {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
         margin: 0 !important;
     }
 

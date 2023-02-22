@@ -75,13 +75,13 @@
 @media only screen and (max-width: 768px) {
   .tutor_title h1 {
     font-size: 1.5rem;
-    margin-bottom: -1rem;
+    margin-bottom: -0.5rem;
   }
 }
 @media only screen and (max-width: 468px) {
   .tutor_title h1 {
     font-size: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: -0.5rem;
   }
 }
 
@@ -101,6 +101,9 @@
 @media only screen and (max-width: 768px) {
   .card_container {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 0.3rem;
+    padding: 0rem;
+    margin: 1rem 0.6rem;
   }
 }
 
@@ -201,10 +204,10 @@
     padding: 0.5rem;
   }
   .card_tutor h5 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .card_tutor p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin: 0 !important;
   }
 }/*# sourceMappingURL=home.css.map */
