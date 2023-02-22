@@ -23,15 +23,21 @@ const Home = () => {
   }
 
   const [tutorArray, setTutorArray] = useState<Tutor[]>([])
+  const [modePage, setModePage] = useState<string>('All')
 
   useEffect(() => {
     setTutorArray(tutorData)
   }, [])
 
   function filterTutor(type: string): void {
-    if (type === 'All') return setTutorArray(tutorData)
+    if (type === 'All') {
+      setTutorArray(tutorData)
+      setModePage('All')
+      return
+    }
     const filterTutor = tutorData.filter((tutor) => tutor.subject === type)
     setTutorArray(filterTutor)
+    setModePage(type)
   }
 
   return (
@@ -40,7 +46,7 @@ const Home = () => {
       <Header />
       <div className="category_container">
         <div
-          className="category"
+          className={`category ${modePage === 'All' ? 'active' : ''}`}
           onClick={() => {
             filterTutor('All')
           }}
@@ -48,7 +54,7 @@ const Home = () => {
           <h3>All</h3>
         </div>
         <div
-          className="category"
+          className={`category ${modePage === 'Math' ? 'active' : ''}`}
           onClick={() => {
             filterTutor('Math')
           }}
@@ -56,7 +62,7 @@ const Home = () => {
           <h3>Math</h3>
         </div>
         <div
-          className="category"
+          className={`category ${modePage === 'Science' ? 'active' : ''}`}
           onClick={() => {
             filterTutor('Science')
           }}
@@ -64,7 +70,7 @@ const Home = () => {
           <h3>Science</h3>
         </div>
         <div
-          className="category"
+          className={`category ${modePage === 'English' ? 'active' : ''}`}
           onClick={() => {
             filterTutor('English')
           }}

@@ -37,6 +37,12 @@
   color: white;
   transform: scale(1.1);
 }
+@media only screen and (max-width: 768px) {
+  .header_container > button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
 .header_container > h3 {
   color: white;
   font-size: 3rem;
@@ -114,6 +120,11 @@
   .category_container .category {
     padding: 0.2rem 1rem;
   }
+}
+.category_container .active {
+  background: #f9a826;
+  color: white;
+  transform: scale(1.1);
 }
 
 .card_tutor {

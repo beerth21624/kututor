@@ -38,6 +38,11 @@
       color: white;
       transform: scale(1.1);
     }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
   }
 
   & > h3 {
@@ -113,6 +118,12 @@
       padding: 0.2rem 1rem;
     }
   }
+  .active {
+  background: #f9a826;
+  color: white;
+  transform: scale(1.1);
+}
+
 }
 
 .card_tutor {
