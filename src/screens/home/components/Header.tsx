@@ -12,6 +12,7 @@ const Header = () => {
 
   return (
     <div className="header_container">
+      <h1>Ku tutor</h1>
       <h3>Find the perfect tutor for your academic success!</h3>
       <button className="btn btn-primary" onClick={clickToSlide}>
         Get Started

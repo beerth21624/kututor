@@ -78,6 +78,9 @@ const Home = () => {
           <h3>English</h3>
         </div>
       </div>
+      <div className="tutor_title">
+        <h1 className="text-center">Tutor List ({tutorArray.length})</h1>
+      </div>
       <div className="d-flex justify-content-center">
         <div className="card_container">
           {tutorArray.map((tutor) => (
