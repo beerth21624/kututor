@@ -88,6 +88,12 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <div className="footer">
+        {/* copyright */}
+        <div className="text-center">
+          <p>© 2021 KU TUTOR. All Rights Reserved.</p>
+        </div>
+      </div>
     </div>
   )
 }
