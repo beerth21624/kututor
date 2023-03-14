@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../../components/navbar/Navbar'
+import Swal from 'sweetalert2'
 import './styleSheet/home.css'
 
 //DATA
@@ -20,6 +21,7 @@ const Home = () => {
     faculty: string
     description: string
     image: string
+    line: string
   }
 
   const [tutorArray, setTutorArray] = useState<Tutor[]>([])
@@ -27,6 +29,13 @@ const Home = () => {
 
   useEffect(() => {
     setTutorArray(tutorData)
+    Swal.fire({
+      title: 'Warning!',
+      text: 'This website is under development',
+      icon: 'warning',
+      confirmButtonText: 'Cool'
+    })
+   
   }, [])
 
   function filterTutor(type: string): void {

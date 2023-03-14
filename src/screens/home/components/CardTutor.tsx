@@ -10,11 +10,12 @@ type Props = {
     faculty: string
     description: string
     image: string
+    line: string
   }
 }
 
 const CardTutor = ({
-  dataTutor: { id, name, subject, price, faculty, description, image },
+  dataTutor: { id, name, subject, price, faculty, description, image,line },
 }: Props) => {
   return (
     <div className="card_tutor">
@@ -33,6 +34,9 @@ const CardTutor = ({
         </p>
         <p className="card-text">
           <b>description :</b> {description}
+        </p>
+         <p className="card-text">
+          <b>line Id :</b> {line}
         </p>
       </div>
     </div>
